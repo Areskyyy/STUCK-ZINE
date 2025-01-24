@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Page de base</title>
+		<style>
+			@font-face {
+				font-family: 'porpora';
+				src: url('Porpora_Regular_400.ttf') format('truetype');
+			}
+
+			body {
+				font-family: 'porpora', sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #ff0000;
+				color: #333;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				flex-direction: column;
+			}
+
+			img {
+				width: 50%;
+				height: auto;
+				margin-bottom: 2rem;
+			}
+
+			@media (max-width: 550px) {
+				img {
+					width: 70%;
+				}
+			}
+			@media (max-width: 400px) {
+				img {
+					width: 100%;
+				}
+				.btn-download {
+					font-size: 0.8rem;
+				}
+			}
+			.bar-container {
+				display: flex;
+				justify-content: space-between;
+				width: 50%;
+				margin-bottom: 1rem;
+			}
+
+			.bar {
+				background-color: white;
+				height: 5px;
+				width: 30%;
+			}
+
+			.btn-download {
+				display: inline-block;
+				padding: 0.5rem 1rem;
+				font-size: 1rem;
+				color: #ff0000;
+				background-color: white;
+				border: none;
+				border-radius: 5px;
+				text-decoration: none;
+				cursor: pointer;
+				transition: background-color 0.3s, color 0.3s;
+			}
+
+			.btn-download:hover {
+				background-color: #f4f4f4;
+				color: #a32720;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="Plan de travail 1.png" alt="STUCK Magazine" />
+		<!-- <div class="bar-container">
+			<div class="bar"></div>
+			<div class="bar"></div>
+		</div> -->
+		<a href="document.pdf" download class="btn-download">Télécharger le zine</a>
+	</body>
+</html>
